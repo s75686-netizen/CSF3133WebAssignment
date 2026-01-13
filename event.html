@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - COMTECH Club</title>
+    <!-- Event-specific stylesheet -->
+    <link rel="stylesheet" href="event.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <!-- Left navigation links -->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organizational-chart.html">Organizational Chart</a>
+            <!-- Dropdown menu for programs -->
+            <div class="dropdown">
+                <a class="dropdown-toggle">Program</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMTECH logo (centered) -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="comtech.png" alt="Comtech Logo">
+            </a>
+        </div>
+
+        <!-- Right navigation with social media icons -->
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="contact.html">Contact Us</a>
+                <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1><i class="fas fa-calendar-alt"></i> COMTECH Events</h1>
+            <p>Join Our Activities and Be Part of COMTECH!</p>
+            <div class="header-subtext">Stay connected with our latest programs and activities</div>
+        </div>
+    </header>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events-section">
+        <div class="section-header">
+            <h2><i class="fas fa-clock"></i> Upcoming Events</h2>
+            <p>Don't miss out on our exciting upcoming activities</p>
+        </div>
+
+        <div class="upcoming-container">
+            <!-- No upcoming events message -->
+            <div class="no-events-card">
+                <div class="no-events-icon">
+                    <i class="fas fa-calendar-times"></i>
+                </div>
+                <h3>No Upcoming Events</h3>
+                <p>Stay tuned for our next exciting programs!</p>
+                <p class="stay-connected">Follow our social media for the latest updates</p>
+            </div>
+        </div>
+
+        <!-- Registration Button Section -->
+        <div class="registration-cta">
+            <div class="cta-content">
+                <div class="cta-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>Want to Join COMTECH?</h3>
+                <p>Stay connected with our community and be the first to know about upcoming events</p>
+                <a href="registration.html" class="cta-button">
+                    <i class="fas fa-edit"></i> Register Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="past-events-section">
+        <div class="section-header">
+            <h2><i class="fas fa-history"></i> Past Events</h2>
+            <p>Explore our previous activities and programs</p>
+        </div>
+
+        <div class="events-grid">
+            <!-- Event Card 1: Capture The Flag 3.0 -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event1.jpg" alt="Capture The Flag 3.0">
+                    <div class="event-badge">Competition</div>
+                </div>
+                <div class="event-content">
+                    <h3>Capture The Flag 3.0</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 2-3 January 2026</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Unisza Kampus Besut</span>
+                    </div>
+                    <p class="event-preview">HACKATHON: CAPTURE THE FLAG 3.0 - Test your cybersecurity skills and solve digital challenges</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event1')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event1" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum WBT and Greetings,</p>
+                            <p>PMFIK is organizing HACKATHON: CAPTURE THE FLAG 3.0 to test students' skills in cybersecurity and digital challenge solving.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Event Details:</strong></p>
+                                <p>📅 Date: 2-3 January 2026</p>
+                                <p>📍 Venue: Unisza Kampus Besut</p>
+                                <p>💰 Registration Fee: RM20</p>
+                            </div>
+
+                            <p><strong>Register at:</strong></p>
+                            <ul>
+                                <li>UniSZA: <a href="https://forms.gle/Kc8a7ebcRvSkRbhR8" target="_blank">Register Here</a></li>
+                                <li>UMT: <a href="https://forms.gle/qQqnZMJNWBKMwsxG6" target="_blank">Register Here</a></li>
+                                <li>UMK: <a href="https://forms.gle/h8v9kHt9kAxyDvqb9" target="_blank">Register Here</a></li>
+                            </ul>
+
+                            <p><strong>Contact for inquiries:</strong></p>
+                            <ul>
+                                <li>Anis: <a href="https://wa.me/601151820920" target="_blank">WhatsApp</a></li>
+                                <li>Zakiah: <a href="https://wa.me/60108398826" target="_blank">WhatsApp</a></li>
+                                <li>Amsyar: <a href="https://wa.me/601114860554" target="_blank">WhatsApp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2: Sukaneka FSKM -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event2.jpg" alt="Sukaneka FSKM">
+                    <div class="event-badge">Sports</div>
+                </div>
+                <div class="event-content">
+                    <h3>Sukaneka FSKM</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 6 December 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Pantai UMT</span>
+                    </div>
+                    <p class="event-preview">A fun-filled sports carnival for FSKM students with various activities and games</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event2')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event2" class="event-description">
+                        <div class="description-content">
+                            <p>Come on, Faculty of Computer Science and Mathematics (FSKM) students! 🌟</p>
+                            <p>Let's participate and enliven SUKANEKA FSKM, a relaxed program full of excitement and sporting spirit! 💪</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Event Details:</strong></p>
+                                <p>📅 Date: 6 December 2025 (Saturday)</p>
+                                <p>🕢 Time: 7:30 AM – 12:00 PM</p>
+                                <p>📍 Venue: UMT Beach</p>
+                            </div>
+
+                            <p><strong>🏅 Year 1 FSKM students are required to attend.</strong></p>
+                            <p>This program also serves as a bonding platform between mentors and mentees, building a spirit of togetherness and strengthening relationships among FSKM students! 🤝💙</p>
+                            <p>🔗 Registration link: <a href="https://forms.gle/3yjEbV5SKixMeCio7" target="_blank">Register Here</a></p>
+                            <p>Let's make this cheerful activity a success together!</p>
+                            <p>See you there! 😄</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3: Pencarian Sekretariat -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event3.jpg" alt="Pencarian Sekretariat">
+                    <div class="event-badge">Recruitment</div>
+                </div>
+                <div class="event-content">
+                    <h3>Secretariat Recruitment</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 23 Nov - 4 Dec 2025</span>
+                        <span><i class="fas fa-users"></i> Open to All UMT Students</span>
+                    </div>
+                    <p class="event-preview">🌐✨ COMTECH Secretariat Search for Session 2025/2026 - Join our leadership team!</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event3')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event3" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum w.b.t and Greetings!</p>
+                            <p>COMTECH Club UMT is now opening opportunities for all UMT students interested in becoming part of the COMTECH family as Secretariat for Session 2025/2026!</p>
+                            <p>COMTECH is an active club in technology, innovation, and student skills development. Join us to gain knowledge, build experience, and participate in exciting programs throughout the session!</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Registration Period:</strong></p>
+                                <p>📅 23 November 2025 – 4 December 2025</p>
+                            </div>
+
+                            <p><strong>✨ Available Secretariat Positions:</strong></p>
+                            <ul>
+                                <li>Corporate Communication</li>
+                                <li>Human Development Executive</li>
+                                <li>Academic and Technology Executive</li>
+                                <li>Innovation and Entrepreneurship Executive</li>
+                                <li>Community Relations Executive</li>
+                            </ul>
+
+                            <p>If you are creative, love learning new things, interested in technology, or want to experience organizational work, COMTECH is the place! 🚀</p>
+                            <p>📌 If you are who we're looking for, join us by scanning the QR code or clicking the link below to register:</p>
+                            <p><a href="https://forms.gle/TjHqxzP46E6WMkRR8" target="_blank">Register Now</a></p>
+                            
+                            <p><strong>📞 For any inquiries, contact:</strong></p>
+                            <ul>
+                                <li>Saudari Atikah: 010-379 1273</li>
+                                <li>Saudari Qistina: 018-276 6537</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 4: XVenture Pitch Workshop -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event4.jpg" alt="XVenture Pitch">
+                    <div class="event-badge">Workshop</div>
+                </div>
+                <div class="event-content">
+                    <h3>XVenture Pitch Workshop</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 15 November 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> DP3, UMTCC</span>
+                    </div>
+                    <p class="event-preview">TURNING VISION INTO REALITY - Professional presentation skills workshop</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event4')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event4" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum and greetings to future technology leaders!</p>
+                            <p>Computer Technology Student Club (COMTECH) is pleased to invite ALL COMPUTER SCIENCE STUDENTS YEAR 1, 2 & 3 to participate in the XVenture Pitch Program:</p>
+                            <p>Turning Vision Into Reality, an exclusive program designed specifically to empower students with professional presentation skills and early exposure to the workplace.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>✨ Program Details:</strong></p>
+                                <p>📆 DATE: 15 NOVEMBER 2025 (SATURDAY)</p>
+                                <p>🕣 TIME: 8:00 AM – 4:00 PM</p>
+                                <p>📍 VENUE: DEWAN PERSIDANGAN 3 (DP3) | UMTCC</p>
+                                <p>🎓 SPEAKER: MR. MOHD RUHAIFI BIN ALIAS</p>
+                                <p>💵 FEE: RM6</p>
+                            </div>
+
+                            <p><strong>This program aims to:</strong></p>
+                            <ul>
+                                <li>Provide exposure to how professional presentations are used in the workplace</li>
+                                <li>Improve proper presentation skills</li>
+                                <li>Build teamwork spirit through group competitions</li>
+                                <li>Improve the quality of proper slide making</li>
+                                <li>Raise awareness about work reality</li>
+                            </ul>
+
+                            <p><strong>Limited to 50 students only‼️</strong></p>
+                            <p>So, don't miss this golden opportunity — register immediately to secure your place!</p>
+                            <p>REGISTRATION: <a href="https://forms.gle/voEn98SPmEJZqDwk6" target="_blank">Register Here</a></p>
+                            
+                            <p><strong>For any inquiries, contact:</strong></p>
+                            <ul>
+                                <li>Ihsan: <a href="https://wa.me/+601112185992" target="_blank">WhatsApp</a></li>
+                                <li>Saerah: <a href="https://wa.me/+601112903772" target="_blank">WhatsApp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 5: Capture The Flag 3.0 Finals -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event5.jpg" alt="Capture The Flag Finals">
+                    <div class="event-badge">Competition</div>
+                </div>
+                <div class="event-content">
+                    <h3>Capture The Flag 3.0 - Finals</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 6-8 November 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> UniSZA Kampus Besut</span>
+                    </div>
+                    <p class="event-preview">HACKATHON finals with exciting prizes and recognition!</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event5')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event5" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum & Greetings</p>
+                            <p>PMFIK will be organizing HACKATHON: CAPTURE THE FLAG 3.0 to test cybersecurity skills and digital challenge solving!</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Event Details:</strong></p>
+                                <p>📅 Date: 6–8 November 2025</p>
+                                <p>📍 Venue: UniSZA Kampus Besut</p>
+                                <p>💸 Fee: RM20</p>
+                                <p>📅 Registration closes: 31 October 2025</p>
+                                <p>⚠️ Limited to 20 participants only!</p>
+                            </div>
+
+                            <p><strong>🎁 Attractive Prizes Await:</strong></p>
+                            <ul>
+                                <li>🥇 Gold Medal + Hamper</li>
+                                <li>🥈 Silver Medal + Hamper</li>
+                                <li>🥉 Bronze Medal + Hamper</li>
+                            </ul>
+                            
+                            <p><strong>For any inquiries, contact:</strong></p>
+                            <ul>
+                                <li>Akmal: <a href="https://wa.me/60193706218" target="_blank">WhatsApp</a></li>
+                                <li>Amirul: <a href="https://wa.me/601173243668" target="_blank">WhatsApp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 6: Annual Grand Meeting -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event6.png" alt="Annual Grand Meeting">
+                    <div class="event-badge">Meeting</div>
+                </div>
+                <div class="event-content">
+                    <h3>Annual Grand Meeting</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 16 October 2025</span>
+                        <span><i class="fas fa-video"></i> CISCO Webex</span>
+                    </div>
+                    <p class="event-preview">💻 COMTECH Annual Grand Meeting Session 2025/2026</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event6')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event6" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum & Greetings</p>
+                            <p>COMTECH is pleased to invite all members to attend the Annual Grand Meeting (AGM) for Session 2025/2026.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Meeting Details:</strong></p>
+                                <p>📅 Date: 16 October 2025 (Thursday)</p>
+                                <p>⏰ Time: 8:30 PM – 10:00 PM</p>
+                                <p>📍 Platform: CISCO Webex</p>
+                            </div>
+
+                            <p>Your presence is highly welcomed to ensure the smooth operation of the club and to provide support to the new leadership.</p>
+                            <p>Thank you.</p>
+                            <p><strong>Sincerely,</strong><br>
+                            COMTECH<br>
+                            Universiti Malaysia Terengganu<br>
+                            Session 2025/2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 7: Pencarian AJK Baru -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event7.png" alt="Pencarian AJK Baru">
+                    <div class="event-badge">Recruitment</div>
+                </div>
+                <div class="event-content">
+                    <h3>MTME Leadership Search 25/26</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> Until 10 July 2025</span>
+                        <span><i class="fas fa-users"></i> Leadership Positions</span>
+                    </div>
+                    <p class="event-preview">Search for COMTECH's Supreme Council and Executive Council members</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event7')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event7" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum & Greetings</p>
+                            <p>We are pleased to announce that the COMTECH Leadership is looking for those interested in pursuing leadership by joining the Supreme Council and Executive Council (MTME) of Computer Technology Student Club (COMTECH) for session 2025/2026.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Application Period:</strong></p>
+                                <p>🗓 Open until 10 July 2025</p>
+                            </div>
+
+                            <p><strong>✍🏻 Applications can be made by scanning the QR code or Google Form link below (please use UMT email):</strong></p>
+                            <p><a href="https://forms.gle/C7Hkw9jgikh9amqM6" target="_blank">Apply Now</a></p>
+                            
+                            <p><strong>For any inquiries, contact:</strong></p>
+                            <ul>
+                                <li>Muhammad Syafiq Amirul Bin Zakaria: <a href="https://wa.me/601160756153" target="_blank">WhatsApp</a></li>
+                                <li>Jazlina Faizah Binti Jamaludin: <a href="https://wa.me/60194488572" target="_blank">WhatsApp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 8: Annual Dinner -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event8.png" alt="Annual Dinner COMTECH">
+                    <div class="event-badge">Celebration</div>
+                </div>
+                <div class="event-content">
+                    <h3>Annual Dinner COMTECH 2025</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 20 June 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Quinara Al-Safir Resort</span>
+                    </div>
+                    <p class="event-preview">✨ "A Night to Remember, A Journey to Celebrate" - Movie Characters Theme</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event8')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event8" class="event-description">
+                        <div class="description-content">
+                            <p>🎬 "A Night to Remember, A Journey to Celebrate"</p>
+                            <p>Assalamualaikum & Greetings</p>
+                            <p>With all due respect, Computer Technology Student Club (COMTECH) would like to invite all Year 3 Computer Science students to join us in celebrating COMTECH Annual Dinner 2025 — a special night to celebrate the final moments before moving to the next phase.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Event Details:</strong></p>
+                                <p>📆 Date: Friday, 20 June 2025</p>
+                                <p>🕰 Time: 8:00 PM</p>
+                                <p>📍 Venue: Quinara Al-Safir Resort</p>
+                                <p>🎭 Theme: Movie Characters (Become your favorite character!)</p>
+                                <p>💵 Fee: RM65/person</p>
+                            </div>
+
+                            <p>This event will be a platform for us to reminisce about our three-year journey, appreciate efforts and achievements, and create sweet memories before stepping into a new phase of life.</p>
+                            
+                            <p><strong>Exciting activities awaiting you:</strong></p>
+                            <ul>
+                                <li>🎤 Appreciation speeches</li>
+                                <li>🎶 Student performances</li>
+                                <li>🏆 Award presentations</li>
+                                <li>🍽 Special dinner</li>
+                            </ul>
+                            
+                            <p><strong>Registration open until 9 June 2025!</strong></p>
+                            <p>📯 Registration link: <a href="https://forms.gle/jSiyR7uyhmpPLjx26" target="_blank">Register Here</a></p>
+                            <p>See you there in your chosen character style! Don't miss the opportunity to be part of this memorable night. 🌟</p>
+                            <p>Thank you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 9: XVenture Pitch May -->
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="event9.png" alt="XVenture Pitch May">
+                    <div class="event-badge">Workshop</div>
+                </div>
+                <div class="event-content">
+                    <h3>XVenture Pitch: Idea to Reality</h3>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> 24 May 2025</span>
+                        <span><i class="fas fa-map-marker-alt"></i> MP1, FSKM</span>
+                    </div>
+                    <p class="event-preview">Transform ideas into reality through intensive training sessions</p>
+                    
+                    <!-- Toggle button -->
+                    <button class="toggle-btn" onclick="toggleDescription('event9')">
+                        <i class="fas fa-chevron-down"></i> See More
+                    </button>
+                    
+                    <!-- Hidden full description -->
+                    <div id="event9" class="event-description">
+                        <div class="description-content">
+                            <p>Assalamualaikum, greetings, and salute to future technology leaders!</p>
+                            <p>Computer Technology Student Club (COMTECH) is pleased to invite all UMT students to participate in the XVenture Pitch program: Transforming Ideas into Reality.</p>
+                            <p>This program aims to guide students in building, refining, and presenting their innovative ideas through sharing sessions and intensive training.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Program Details:</strong></p>
+                                <p>📅 DATE: 24 MAY 2025 (SATURDAY)</p>
+                                <p>🕒 TIME: 8:30 AM – 4:00 PM</p>
+                                <p>🧕🏻 GUEST SPEAKER: MS. ZAINEBBEEVI KAMALBATCHA (SENIOR LECTURER)</p>
+                                <p>📍 LOCATION: PROGRAMMING LAB 1 (MP1), FSKM</p>
+                                <p>💰 FEE: RM8 (BREAKFAST & LUNCH PROVIDED)</p>
+                            </div>
+
+                            <p><strong>📌 Added values offered in this program:</strong></p>
+                            <ul>
+                                <li>🔹 Expert Guidance: Exclusive session with guest speaker, Ms. Zainebbeevi Kamalbatcha (Lecturer, PPAL)</li>
+                                <li>🔹 Presentation Skills: Opportunity to hone skills in delivering ideas effectively and with high impact</li>
+                                <li>🔹 Professional Network: Meet and share ideas with like-minded peers</li>
+                                <li>🔹 Recognition and Rewards: Participation certificates provided and attractive prizes await each winner!</li>
+                            </ul>
+
+                            <p><strong>Places are limited to 30 participants only</strong>, so don't miss this opportunity! Please register immediately to secure your place.</p>
+                            <p>REGISTRATION: <a href="https://forms.gle/LJqGeeF53YBBzV488" target="_blank">Register Here</a></p>
+                            <p><strong>E-certificate provided.</strong></p>
+                            
+                            <p><strong>For any inquiries, contact:</strong></p>
+                            <ul>
+                                <li>📞 Qis: <a href="https://wa.me/+60182766537" target="_blank">WhatsApp</a></li>
+                                <li>📞 Iffah: <a href="https://wa.me/+601126427991" target="_blank">WhatsApp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer left section with logo -->
+            <div class="footer-left">
+                <img src="comtech.png" alt="Comtech-logo" style="height: 100px; width: auto; padding-left: 55px;">
+                <p>COMTECH, Inspiring Technologies</p>
+            </div>
+
+            <!-- Footer center section with quick links -->
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer right section with contact info -->
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:kelab.comtech@umt.edu.my">kelab.comtech@umt.edu.my</a></p>
+                <p>Location: University Malaysia Terengganu</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_comtechumt/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/comtech.umt" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@comtechumt4990" target="_blank">Youtube</a>
+                    <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMTECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Event JavaScript -->
+    <script src="event.js"></script>
+</body>
+</html>

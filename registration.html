@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - COMTECH Club</title>
+    <!-- Registration-specific stylesheet -->
+    <link rel="stylesheet" href="registration.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <!-- Left navigation links -->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organizational-chart.html">Organizational Chart</a>
+            <!-- Dropdown menu for programs -->
+            <div class="dropdown">
+                <a class="dropdown-toggle">Program</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMTECH logo (centered) -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="comtech.png" alt="Comtech Logo">
+            </a>
+        </div>
+
+        <!-- Right navigation with social media icons -->
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="contact.html">Contact Us</a>
+                <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1><i class="fas fa-user-plus"></i> Event Registration</h1>
+            <p>Join Us in Our Upcoming Activities</p>
+            <div class="header-subtext">Register now and be part of the COMTECH community</div>
+        </div>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="registration-section">
+        <div class="registration-container">
+            <!-- Form Header -->
+            <div class="form-header">
+                <h2><i class="fas fa-clipboard-list"></i> Registration Form</h2>
+                <p>Please fill in all required fields to complete your registration</p>
+            </div>
+
+            <!-- Registration Form -->
+            <form id="eventForm" class="registration-form">
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title"><i class="fas fa-user"></i> Personal Information</h3>
+                    
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="nama">
+                            <i class="fas fa-id-card"></i> Full Name <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nama" 
+                            name="nama" 
+                            placeholder="Enter your full name" 
+                            required>
+                        <span class="error-message" id="namaError"></span>
+                    </div>
+
+                    <!-- Matric Number -->
+                    <div class="form-group">
+                        <label for="matric">
+                            <i class="fas fa-id-badge"></i> Matric Number <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="matric" 
+                            name="matric" 
+                            placeholder="Enter your matric number (e.g., S12345)" 
+                            required>
+                        <span class="error-message" id="matricError"></span>
+                    </div>
+
+                    <!-- Year of Study -->
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-graduation-cap"></i> Year of Study <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tahun" value="1" required>
+                                <span>Year 1</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tahun" value="2">
+                                <span>Year 2</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tahun" value="3">
+                                <span>Year 3</span>
+                            </label>
+                        </div>
+                        <span class="error-message" id="tahunError"></span>
+                    </div>
+
+                    <!-- Faculty -->
+                    <div class="form-group">
+                        <label for="faculty">
+                            <i class="fas fa-building"></i> Faculty <span class="required">*</span>
+                        </label>
+                        <select id="faculty" name="faculty" required>
+                            <option value="">-- Select Faculty --</option>
+                            <option value="FSKA">Faculty of Fishery and Aquaculture Science (FSKA)</option>
+                            <option value="FSMP">Faculty of Food Science and Agrotechnology (FSMP)</option>
+                            <option value="FSME">Faculty of Marine Science and Environment (FSME)</option>
+                            <option value="FSKM">Faculty of Computer Science and Mathematics (FSKM)</option>
+                            <option value="FTKKO">Faculty of Ocean Engineering Technology and Naval Architecture (FTKKO)</option>
+                            <option value="FPM">Faculty of Maritime Studies (FPM)</option>
+                            <option value="FPEPS">Faculty of Business, Economics and Social Development (FPEPS)</option>
+                        </select>
+                        <span class="error-message" id="facultyError"></span>
+                    </div>
+
+                    <!-- Programme -->
+                    <div class="form-group">
+                        <label for="programme">
+                            <i class="fas fa-book"></i> Programme <span class="required">*</span>
+                        </label>
+                        <select id="programme" name="programme" required>
+                            <option value="">-- Select Programme --</option>
+                        </select>
+                        <span class="error-message" id="programmeError"></span>
+                    </div>
+                </div>
+
+                <!-- Event Details Section -->
+                <div class="form-section">
+                    <h3 class="section-title"><i class="fas fa-calendar-alt"></i> Event Details</h3>
+                    
+                    <!-- Event Name -->
+                    <div class="form-group">
+                        <label for="eventName">
+                            <i class="fas fa-flag"></i> Event Name <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="eventName" 
+                            name="eventName" 
+                            placeholder="Enter event name" 
+                            required>
+                        <span class="error-message" id="eventNameError"></span>
+                    </div>
+                </div>
+
+                <!-- Payment Information Section -->
+                <div class="form-section">
+                    <h3 class="section-title"><i class="fas fa-credit-card"></i> Payment Information</h3>
+                    
+                    <!-- Payment Method -->
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-money-bill-wave"></i> Payment Method <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                            <label class="radio-label payment-option">
+                                <input type="radio" name="paymentMethod" value="qr" required>
+                                <span><i class="fas fa-qrcode"></i> DuitNow QR</span>
+                            </label>
+                            <label class="radio-label payment-option">
+                                <input type="radio" name="paymentMethod" value="gateway">
+                                <span><i class="fas fa-globe"></i> Online Payment Gateway</span>
+                            </label>
+                        </div>
+                        <span class="error-message" id="paymentMethodError"></span>
+                    </div>
+
+                    <!-- QR Payment Section (Initially Hidden) -->
+                    <div id="qrSection" class="qr-payment" style="display: none;">
+                        <div class="qr-container">
+                            <h4><i class="fas fa-qrcode"></i> Scan QR Code to Pay</h4>
+                            <img src="qr.jpg" alt="DuitNow QR Code" class="qr-image">
+                            <p class="qr-instruction">Scan this QR code using your banking app to complete payment</p>
+                            
+                            <div class="payment-confirmation">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="paymentDone">
+                                    <span><i class="fas fa-check-circle"></i> I have completed the payment</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Receipt Upload -->
+                    <div class="form-group">
+                        <label for="receipt">
+                            <i class="fas fa-file-upload"></i> Upload Payment Receipt
+                        </label>
+                        <div class="file-upload-wrapper">
+                            <input 
+                                type="file" 
+                                id="receipt" 
+                                name="receipt" 
+                                accept="image/*,application/pdf"
+                                class="file-input">
+                            <label for="receipt" class="file-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span id="fileName">Choose file or drag here</span>
+                            </label>
+                        </div>
+                        <small class="file-hint">
+                            <i class="fas fa-info-circle"></i> Accepted formats: JPG, PNG, PDF (Max 5MB)
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Registration
+                    </button>
+                </div>
+            </form>
+
+            <!-- Success Message (Hidden Initially) -->
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Registration Successful!</h3>
+                <p>Thank you for registering. We'll contact you soon with event details.</p>
+                <a href="event.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer left section with logo -->
+            <div class="footer-left">
+                <img src="comtech.png" alt="Comtech-logo" style="height: 100px; width: auto; padding-left: 55px;">
+                <p>COMTECH, Inspiring Technologies</p>
+            </div>
+
+            <!-- Footer center section with quick links -->
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer right section with contact info -->
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:kelab.comtech@umt.edu.my">kelab.comtech@umt.edu.my</a></p>
+                <p>Location: University Malaysia Terengganu</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_comtechumt/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/comtech.umt" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@comtechumt4990" target="_blank">Youtube</a>
+                    <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMTECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Registration JavaScript -->
+    <script src="registration.js"></script>
+</body>
+</html>

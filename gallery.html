@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - COMTECH Club</title>
+    <!-- Gallery-specific stylesheet -->
+    <link rel="stylesheet" href="gallery-style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!--navigation bar-->
+    <div class="navbar">
+        <!-- Left navigation links -->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organizational-chart.html">Organizational Chart</a>
+            <!-- Dropdown menu for programs -->
+            <div class="dropdown">
+                <a class="dropdown-toggle">Program</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMTECH logo (centered) -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="comtech.png" alt="Comtech Logo">
+            </a>
+        </div>
+
+        <!-- Right navigation with social media icons -->
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="contact.html">Contact Us</a>
+                <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- page header -->
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> COMTECH Gallery</h1>
+            <p>Capturing Moments, Creating Memories</p>
+            <div class="header-subtext">Explore our journey through technology, innovation, and community</div>
+        </div>
+    </header>
+
+    <!-- gallery grid section -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <h2><i class="fas fa-camera-retro"></i> Event Highlights</h2>
+            <p>Click on any image to view in fullscreen</p>
+        </div>
+        
+        <!-- Photo grid with interactive cards -->
+        <div class="photo-grid">
+            <!-- Event Photo 1 -->
+            <div class="photo-card" onclick="openModal('event1.jpg', 'Capture The Flag 3.0')" data-category="competition">
+                <div class="photo-wrapper">
+                    <img src="event1.jpg" alt="Capture The Flag 3.0 Event">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>Capture The Flag 3.0</h3>
+                    <span class="event-tag"><i class="fas fa-flag"></i> Competition</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 2 -->
+            <div class="photo-card" onclick="openModal('event2.jpg', 'Sukaneka FSKM')" data-category="sports">
+                <div class="photo-wrapper">
+                    <img src="event2.jpg" alt="Sukaneka FSKM Event">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>Sukaneka FSKM</h3>
+                    <span class="event-tag"><i class="fas fa-running"></i> Sports</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 3 -->
+            <div class="photo-card" onclick="openModal('event3.jpg', 'Pencarian Sekretariat')" data-category="recruitment">
+                <div class="photo-wrapper">
+                    <img src="event3.jpg" alt="Pencarian Sekretariat Event">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>Pencarian Sekretariat</h3>
+                    <span class="event-tag"><i class="fas fa-users"></i> Recruitment</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 4 -->
+            <div class="photo-card" onclick="openModal('event4.jpg', 'XVenture Pitch')" data-category="workshop">
+                <div class="photo-wrapper">
+                    <img src="event4.jpg" alt="XVenture Pitch Event">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>XVenture Pitch</h3>
+                    <span class="event-tag"><i class="fas fa-lightbulb"></i> Workshop</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 5 -->
+            <div class="photo-card" onclick="openModal('event5.jpg', 'Capture The Flag 3.0 - Finals')" data-category="competition">
+                <div class="photo-wrapper">
+                    <img src="event5.jpg" alt="Capture The Flag 3.0 Finals">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>CTF 3.0 - Finals</h3>
+                    <span class="event-tag"><i class="fas fa-flag"></i> Competition</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 6 -->
+            <div class="photo-card" onclick="openModal('event6.png', 'Annual Grand Meeting')" data-category="meeting">
+                <div class="photo-wrapper">
+                    <img src="event6.png" alt="Annual Grand Meeting">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>Annual Grand Meeting</h3>
+                    <span class="event-tag"><i class="fas fa-handshake"></i> Meeting</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 7 -->
+            <div class="photo-card" onclick="openModal('event7.png', 'Pencarian AJK Baru')" data-category="recruitment">
+                <div class="photo-wrapper">
+                    <img src="event7.png" alt="Pencarian AJK Baru">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>Pencarian AJK Baru</h3>
+                    <span class="event-tag"><i class="fas fa-users"></i> Recruitment</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 8 -->
+            <div class="photo-card" onclick="openModal('event8.png', 'Annual Dinner COMTECH')" data-category="celebration">
+                <div class="photo-wrapper">
+                    <img src="event8.png" alt="Annual Dinner COMTECH">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>Annual Dinner COMTECH</h3>
+                    <span class="event-tag"><i class="fas fa-glass-cheers"></i> Celebration</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 9 -->
+            <div class="photo-card" onclick="openModal('event9.png', 'XVenture Pitch Workshop')" data-category="workshop">
+                <div class="photo-wrapper">
+                    <img src="event9.png" alt="XVenture Pitch Workshop">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>XVenture Pitch Workshop</h3>
+                    <span class="event-tag"><i class="fas fa-lightbulb"></i> Workshop</span>
+                </div>
+            </div>
+
+            <!-- Event Photo 10 -->
+            <div class="photo-card" onclick="openModal('event10.png', 'UniEdu Connect')" data-category="outreach">
+                <div class="photo-wrapper">
+                    <img src="event10.png" alt="UniEdu Connect Event">
+                    <div class="photo-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    <h3>UniEdu Connect</h3>
+                    <span class="event-tag"><i class="fas fa-graduation-cap"></i> Outreach</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fullscreen modal -->
+    <div id="photoModal" class="modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Fullscreen Image">
+        <div class="modal-caption" id="modalCaption"></div>
+        <!-- Navigation arrows for modal -->
+        <button class="modal-nav modal-prev" onclick="navigateModal(-1); event.stopPropagation();">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-nav modal-next" onclick="navigateModal(1); event.stopPropagation();">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <section class="slideshow-section">
+        <h2>Photo Slideshow</h2>
+        <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+                <img src="event1.jpg" alt="Slide 1">
+                <div class="slide-caption">Event Highlights 2024</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event2.jpg" alt="Slide 2">
+                <div class="slide-caption">Team Building Activities</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event3.jpg" alt="Slide 3">
+                <div class="slide-caption">Workshop Sessions</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event4.jpg" alt="Slide 4">
+                <div class="slide-caption">Community Outreach</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event5.jpg" alt="Slide 5">
+                <div class="slide-caption">Competition</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event6.jpg" alt="Slide 6">
+                <div class="slide-caption">Annual Grand Meeting</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event7.jpg" alt="Slide 7">
+                <div class="slide-caption">Pencarian AJK Baru</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event8.jpg" alt="Slide 8">
+                <div class="slide-caption">Annual Dinner Comtech</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event9.jpg" alt="Slide 9">
+                <div class="slide-caption">Workshop</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="event10.png" alt="Slide 10">
+                <div class="slide-caption">Community Outreach</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+    </section>
+    
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="comtech.png" alt="Comtech-logo" style="height: 100px; width: auto; padding-left: 55px;">
+                <p>COMTECH, Inspiring Technologies</p>
+            </div>
+
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email:
+                    <a href="mailto:kelab.comtech@umt.edu.my" class="email-link">
+                        kelab.comtech@umt.edu.my
+                    </a>
+                </p>
+                <p>Location: University Malaysia Terengganu</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_comtechumt/" target="">Instagram</a>
+                    <a href="https://www.facebook.com/comtech.umt">Facebook</a>
+                    <a href="https://www.youtube.com/@comtechumt4990">Youtube</a>
+                    <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMTECH. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="gallery-script.js"></script>
+</body>
+</html>

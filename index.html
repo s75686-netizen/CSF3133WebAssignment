@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - COMTECH Club</title>
+    <!-- Index-specific stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <!-- Left navigation links -->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organizational-chart.html">Organizational Chart</a>
+            <!-- Dropdown menu for programs -->
+            <div class="dropdown">
+                <a class="dropdown-toggle">Program</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMTECH logo (centered) -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="comtech.png" alt="Comtech Logo">
+            </a>
+        </div>
+
+        <!-- Right navigation with social media icons -->
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="contact.html">Contact Us</a>
+                <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero">
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <img src="ann00.jpg" alt="COMTECH Announcement 1">
+                <div class="slide-overlay">
+                    <h1>Welcome to COMTECH</h1>
+                    <p>Computer Technology Student Club - UMT</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <img src="ann02.jpg" alt="COMTECH Announcement 2">
+                <div class="slide-overlay">
+                    <h1>Join Our Community</h1>
+                    <p>Inspiring Technologies, Building Future Leaders</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide fade">
+                <img src="ann03.jpg" alt="COMTECH Announcement 3">
+                <div class="slide-overlay">
+                    <h1>Upcoming Events</h1>
+                    <p>Stay Connected with Our Latest Activities</p>
+                </div>
+            </div>
+
+            <!-- Previous and Next buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots navigation -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Latest Announcements Section -->
+    <section class="announcement">
+        <div class="section-header">
+            <h2><i class="fas fa-bullhorn"></i> Latest Announcements</h2>
+            <p>Stay informed with our latest news and updates</p>
+        </div>
+
+        <div class="announcement-list">
+            <!-- Announcement Card 1 -->
+            <div class="announcement-card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>COMTECH Recruitment 2026</h3>
+                <p>We are opening registration for new members. Interested students are encouraged to join.</p>
+                <span class="announcement-date"><i class="fas fa-calendar-alt"></i> January 2026</span>
+            </div>
+
+            <!-- Announcement Card 2 -->
+            <div class="announcement-card">
+                <div class="card-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development Workshop</h3>
+                <p>An introduction workshop on HTML, CSS and JavaScript for beginners.</p>
+                <span class="announcement-date"><i class="fas fa-calendar-alt"></i> February 2026</span>
+            </div>
+
+            <!-- Announcement Card 3 -->
+            <div class="announcement-card">
+                <div class="card-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <h3>Important Notice</h3>
+                <p>Please check the event calendar for updated schedule and venues.</p>
+                <span class="announcement-date"><i class="fas fa-sync-alt"></i> Updated</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events" id="event">
+        <div class="section-header">
+            <h2><i class="fas fa-calendar-check"></i> Upcoming Events</h2>
+            <p>Mark your calendar and join our activities</p>
+        </div>
+
+        <div class="calendar-container">
+            <iframe 
+                src="https://calendar.google.com/calendar/embed?src=comtechclubumt%40gmail.com&ctz=Asia%2FKuala_Lumpur" 
+                frameborder="0" 
+                scrolling="no">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Club Highlights Section -->
+    <section class="highlights">
+        <div class="section-header">
+            <h2><i class="fas fa-trophy"></i> Club Highlights</h2>
+            <p>Celebrating our achievements and excellence</p>
+        </div>
+
+        <div class="highlight-grid">
+            <!-- Highlight Card 1 -->
+            <div class="highlight-card">
+                <div class="highlight-image">
+                    <img src="highlight01.jpg" alt="Best Student Award">
+                    <div class="highlight-overlay">
+                        <i class="fas fa-award"></i>
+                    </div>
+                </div>
+                <div class="highlight-content">
+                    <h3>Excellence Award</h3>
+                    <p>Bachelor of Computer Science (Software Engineering) with Honors</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 2 -->
+            <div class="highlight-card">
+                <div class="highlight-image">
+                    <img src="highlight02.jpg" alt="Best Student Award">
+                    <div class="highlight-overlay">
+                        <i class="fas fa-award"></i>
+                    </div>
+                </div>
+                <div class="highlight-content">
+                    <h3>Excellence Award</h3>
+                    <p>Bachelor of Computer Science (Mobile Computing) with Honors</p>
+                </div>
+            </div>
+
+            <!-- Highlight Card 3 -->
+            <div class="highlight-card">
+                <div class="highlight-image">
+                    <img src="highlight03.jpg" alt="Best Student Award">
+                    <div class="highlight-overlay">
+                        <i class="fas fa-award"></i>
+                    </div>
+                </div>
+                <div class="highlight-content">
+                    <h3>Excellence Award</h3>
+                    <p>Bachelor of Computer Science in Maritime Informatics (Honors)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Call to Action Section -->
+    <section class="event-cta">
+        <div class="cta-content">
+            <div class="cta-icon">
+                <i class="fas fa-calendar-day"></i>
+            </div>
+            <h2>Stay Updated with Our Events</h2>
+            <p>Explore upcoming activities and participate in our club events</p>
+            <a href="#event" class="event-btn">
+                <i class="fas fa-eye"></i> View Full Event Calendar
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer left section with logo -->
+            <div class="footer-left">
+                <img src="comtech.png" alt="Comtech-logo" style="height: 100px; width: auto; padding-left: 55px;">
+                <p>COMTECH, Inspiring Technologies</p>
+            </div>
+
+            <!-- Footer center section with quick links -->
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer right section with contact info -->
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:kelab.comtech@umt.edu.my">kelab.comtech@umt.edu.my</a></p>
+                <p>Location: University Malaysia Terengganu</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_comtechumt/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/comtech.umt" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@comtechumt4990" target="_blank">Youtube</a>
+                    <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMTECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Index JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
+

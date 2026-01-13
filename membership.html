@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become COMTECH member</title>
+    <!-- Join-specific stylesheet -->
+    <link rel="stylesheet" href="membership.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <!-- Left navigation links -->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organizational-chart.html">Organizational Chart</a>
+            <!-- Dropdown menu for programs -->
+            <div class="dropdown">
+                <a class="dropdown-toggle">Program</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMTECH logo (centered) -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="comtech.png" alt="Comtech Logo">
+            </a>
+        </div>
+
+        <!-- Right navigation with social media icons -->
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="contact.html">Contact Us</a>
+                <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- page header -->
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1><i class="fas fa-users"></i> Join COMTECH</h1>
+            <p>Secretariat Recruitment Session 2025/2026</p>
+            <div class="header-subtext">Be part of our innovative tech community and make a difference!</div>
+        </div>
+    </header>
+
+    <!-- main content section -->
+    <div class="join-wrapper">
+        <!-- Introduction Section -->
+        <div class="intro-section">
+            <h2><i class="fas fa-info-circle"></i> Why Join COMTECH?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Skill Development</h3>
+                    <p>Enhance your technical and soft skills through workshops and hands-on projects</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <p>Connect with like-minded tech enthusiasts and industry professionals</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Leadership</h3>
+                    <p>Develop leadership qualities by organizing events and leading initiatives</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Work on cutting-edge technology projects and innovative solutions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Application Form Section -->
+        <div class="form-section">
+            <div class="form-header">
+                <h2><i class="fas fa-edit"></i> Secretariat Application Form</h2>
+                <p class="form-description">Fill in your details below to apply for COMTECH Secretariat 2025/2026</p>
+            </div>
+
+            <form id="joinForm" action="#" method="POST" novalidate>
+                
+                <!-- Full Name Input -->
+                <div class="form-group">
+                    <label for="fullName">
+                        <i class="fas fa-user"></i> Full Name <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        name="fullName" 
+                        placeholder="e.g., ALI BIN ABU"
+                        required
+                        autocomplete="name">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Email Address <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="e.g., student@umt.edu.my"
+                        required
+                        autocomplete="email">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- Phone Number Input -->
+                <div class="form-group">
+                    <label for="phone">
+                        <i class="fas fa-phone"></i> Phone Number <span class="required">*</span>
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="e.g., 0123456789"
+                        required
+                        autocomplete="tel">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <!-- Program Selection -->
+                <div class="form-group">
+                    <label for="program">
+                        <i class="fas fa-book"></i> Study Program <span class="required">*</span>
+                    </label>
+                    <select id="program" name="program" required>
+                        <option value="">-- Select Your Program --</option>
+                        <option value="software-engineering">Computer Science (Software Engineering)</option>
+                        <option value="maritime-informatics">Computer Science with Maritime Informatics</option>
+                        <option value="mobile-computing">Computer Science (Mobile Computing)</option>
+                        <option value="cyber-security">Computer Science (Cyber Security)</option>
+                        <option value="data-science">Computer Science (Data Science)</option>
+                    </select>
+                    <span class="error-message" id="programError"></span>
+                </div>
+
+                <!-- Year of Study -->
+                <div class="form-group">
+                    <label class="group-label">
+                        <i class="fas fa-calendar-alt"></i> Year of Study <span class="required">*</span>
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="year" value="1" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Year 1</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="year" value="2">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Year 2</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="year" value="3">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Year 3</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="year" value="4">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Year 4</span>
+                        </label>
+                    </div>
+                    <span class="error-message" id="yearError"></span>
+                </div>
+
+                <!-- EXCO Position 1st Choice -->
+                <div class="form-group">
+                    <label class="group-label">
+                        <i class="fas fa-star"></i> EXCO Position - 1st Choice <span class="required">*</span>
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="exco1" value="corporate-communication" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Corporate Communication</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco1" value="human-development">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Human Development</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco1" value="academic-technology">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Academic & Technology</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco1" value="innovation-entrepreneurship">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Innovation & Entrepreneurship</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco1" value="community-engagement">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Community Engagement</span>
+                        </label>
+                    </div>
+                    <span class="error-message" id="exco1Error"></span>
+                </div>
+
+                <!-- EXCO Position 2nd Choice -->
+                <div class="form-group">
+                    <label class="group-label">
+                        <i class="fas fa-star-half-alt"></i> EXCO Position - 2nd Choice <span class="required">*</span>
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="exco2" value="corporate-communication" required>
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Corporate Communication</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco2" value="human-development">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Human Development</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco2" value="academic-technology">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Academic & Technology</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco2" value="innovation-entrepreneurship">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Innovation & Entrepreneurship</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="exco2" value="community-engagement">
+                            <span class="radio-custom"></span>
+                            <span class="radio-label">Community Engagement</span>
+                        </label>
+                    </div>
+                    <span class="error-message" id="exco2Error"></span>
+                </div>
+
+                <!-- Motivation Textarea -->
+                <div class="form-group">
+                    <label for="motivation">
+                        <i class="fas fa-lightbulb"></i> Why Do You Want to Join COMTECH as a Secretariat? <span class="required">*</span>
+                    </label>
+                    <textarea 
+                        id="motivation" 
+                        name="motivation" 
+                        rows="6" 
+                        placeholder="Share your motivation and what you hope to contribute to COMTECH..."
+                        required
+                        maxlength="1000"></textarea>
+                    <div class="char-counter">
+                        <span id="charCount">0</span>/1000 characters
+                    </div>
+                    <span class="error-message" id="motivationError"></span>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-label">I agree to the <a href="#" onclick="showTerms(); return false;">Terms and Conditions</a> and confirm that all information provided is accurate.</span>
+                    </label>
+                    <span class="error-message" id="termsError"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Submit Application
+                </button>
+            </form>
+
+            <!-- Success Message (Hidden initially) -->
+            <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle"></i>
+                <h3>Application Submitted Successfully!</h3>
+                <p>Thank you for applying to COMTECH Secretariat. We will review your application and get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer left section with logo -->
+            <div class="footer-left">
+                <img src="comtech.png" alt="Comtech-logo" style="height: 100px; width: auto; padding-left: 55px;">
+                <p>COMTECH, Inspiring Technologies</p>
+            </div>
+
+            <!-- Footer center section with quick links -->
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer right section with contact info -->
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:kelab.comtech@umt.edu.my">kelab.comtech@umt.edu.my</a></p>
+                <p>Location: University Malaysia Terengganu</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_comtechumt/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/comtech.umt" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@comtechumt4990" target="_blank">Youtube</a>
+                    <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMTECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Join JavaScript -->
+    <script src="membership.js"></script>
+</body>
+</html>

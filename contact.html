@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - COMTECH Club</title>
+    <!-- Contact-specific stylesheet -->
+    <link rel="stylesheet" href="contact-style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <!-- Left navigation links -->
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="organizational-chart.html">Organizational Chart</a>
+            <!-- Dropdown menu for programs -->
+            <div class="dropdown">
+                <a class="dropdown-toggle">Program</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html">Gallery</a>
+                    <a href="event.html">Events</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMTECH logo (centered) -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="comtech.png" alt="Comtech Logo">
+            </a>
+        </div>
+
+        <!-- Right navigation with social media icons -->
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="contact.html">Contact Us</a>
+                <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- page header -->
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1><i class="fas fa-paper-plane"></i> Get In Touch</h1>
+            <p>We'd Love To Hear From You!</p>
+            <div class="header-subtext">Have questions or want to join COMTECH? Reach out to us anytime</div>
+        </div>
+    </header>
+
+    <!-- contact content section -->
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            
+            <!-- left column: contact information -->
+            <div class="contact-info">
+                <!-- Email Card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <a href="mailto:kelab.comtech@umt.edu.my">kelab.comtech@umt.edu.my</a>
+                        <p class="info-subtext">We'll respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <!-- Location Card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Location</h3>
+                        <p>Universiti Malaysia Terengganu<br>21030 Kuala Nerus<br>Terengganu, Malaysia</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="social-section">
+                    <h3><i class="fas fa-share-alt"></i> Connect With Us</h3>
+                    <p class="social-description">Follow us on social media for updates!</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/official_comtechumt/" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-link instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/comtech.umt" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-link facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@comtechumt4990" target="_blank" rel="noopener noreferrer" title="YouTube" class="social-link youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="social-link whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right column: contact form -->
+            <div class="contact-form-wrapper">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p class="form-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <!-- contact form -->
+                <form id="contactForm" action="#" method="POST" novalidate>
+                    <!-- Full Name Input -->
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i> Full Name <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Enter your full name" 
+                            required
+                            autocomplete="name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Student Email <span class="required">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="no.matrik@ocean.umt.edu.my" 
+                            required
+                            autocomplete="email">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <!-- Subject Input (New) -->
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fas fa-tag"></i> Subject <span class="required">*</span>
+                        </label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Select a subject --</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="membership">Membership</option>
+                            <option value="event">Event Information</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <!-- Message Text area -->
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment-dots"></i> Message <span class="required">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6" 
+                            placeholder="Write your message here..." 
+                            required
+                            minlength="10"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                        <span class="char-counter"><span id="charCount">0</span> / 500 characters</span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+
+                <!-- Success Message (Hidden initially) -->
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Message Sent Successfully!</h3>
+                    <p>Thank you for contacting COMTECH. We'll get back to you soon.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer left section with logo -->
+            <div class="footer-left">
+                <img src="comtech.png" alt="Comtech-logo" style="height: 100px; width: auto; padding-left: 55px;">
+                <p>COMTECH, Inspiring Technologies</p>
+            </div>
+
+            <!-- Footer center section with quick links -->
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer right section with contact info -->
+            <div class="footer-right">
+                <h4>Contact</h4>
+                <p>Email:
+                    <a href="mailto:kelab.comtech@umt.edu.my" class="email-link">
+                        kelab.comtech@umt.edu.my
+                    </a>
+                </p>
+                <p>Location: University Malaysia Terengganu</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/official_comtechumt/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/comtech.umt" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@comtechumt4990" target="_blank">Youtube</a>
+                    <a href="https://chat.whatsapp.com/J70zQMnldAVDCMLgigXqbp" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMTECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Contact JavaScript -->
+    <script src="contact-script.js"></script>
+</body>
+</html>

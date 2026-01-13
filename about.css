@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Orbitron font for headings, titles, and logo */
+.logo, h1, h2, h3, .section-title h2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* navigation bar */
+.navbar {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 30px;
+    color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+.nav-left a, .nav-right a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #00bcd4;
+}
+
+/* dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+    color: #00bcd4;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* logo styling */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo img {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* social media icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icons a i {
+    font-size: 22px;
+    margin-left: 15px;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* social media hover effects with brand colors */
+.social-icons a:hover .fa-instagram {
+    color: #e1306c;
+    transform: scale(1.2);
+}
+
+.social-icons a:hover .fa-facebook-f {
+    color: #1877f2;
+    transform: scale(1.2);
+}
+
+.social-icons a:hover .fa-youtube {
+    color: #ff0000;
+    transform: scale(1.2);
+}
+
+.social-icons a:hover .fa-whatsapp {
+    color: #25D366;
+    transform: scale(1.2);
+}
+
+/* page header styling */
+.page-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+    color: #ffffff;
+    padding: 100px 20px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* animated background overlay */
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.3;
+    animation: wave 15s ease-in-out infinite;
+}
+
+/* Wave animation for header overlay */
+@keyframes wave {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25px);
+    }
+}
+
+/* Header content positioning */
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header title styling */
+.page-header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease;
+}
+
+.page-header h1 i {
+    margin-right: 15px;
+    color: #3498db;
+}
+
+/* Header subtitle */
+.page-header p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+    font-weight: 300;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+/* Header additional text */
+.header-subtext {
+    font-size: 1rem;
+    color: #bdc3c7;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+/* Header fade-in animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* introduction section */
+.introduction {
+    padding: 80px 20px;
+    background-image: url('umt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.intro-content h2 i {
+    margin-right: 10px;
+}
+
+.intro-lead {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* programs grid */
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+/* Individual program card */
+.program-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #333;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(52, 152, 219, 0.4);
+}
+
+/* Program icon styling */
+.program-icon {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.program-icon i {
+    color: white;
+}
+
+.program-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.program-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Introduction description */
+.intro-description {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 40px auto 0;
+    line-height: 1.8;
+}
+
+/* history section */
+.history {
+    padding: 80px 20px;
+    background: white;
+}
+
+/* Section title styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.section-title h2 i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* History container layout */
+.history-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* timeline styling */
+.history-text {
+    flex: 1;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 40px;
+}
+
+/* Timeline marker (dot) */
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #3498db;
+    z-index: 1;
+}
+
+/* Timeline vertical line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 25px;
+    bottom: -40px;
+    width: 2px;
+    background: linear-gradient(180deg, #3498db, #ecf0f1);
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+/* Timeline content */
+.timeline-content h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* history image */
+.history-image {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image caption overlay */
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.image-caption i {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+/* vision and mission section */
+.vision-mission {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+}
+
+.vm-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Vision/Mission cards */
+.vm-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Vision card specific styling */
+.vision-card {
+    border-top: 5px solid #3498db;
+}
+
+/* Mission card specific styling */
+.mission-card {
+    border-top: 5px solid #e74c3c;
+}
+
+/* VM icon styling */
+.vm-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.vision-card .vm-icon i {
+    color: #3498db;
+}
+
+.mission-card .vm-icon i {
+    color: #e74c3c;
+}
+
+.vm-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* VM quote styling */
+.vm-quote {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #3498db;
+    line-height: 1.5;
+}
+
+.mission-card .vm-quote {
+    color: #e74c3c;
+}
+
+.vm-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* membership button section */
+/* registration cta (call to action) section */
+.membership-cta {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content {
+    color: white;
+}
+
+.cta-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* Bounce animation for icon */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.cta-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+/* Registration button */
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: #2980b9;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cta-button i {
+    margin-right: 10px;
+}
+
+.cta-button:hover {
+    background: #2c3e50;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+    transform: translateY(-2px);
+}
+
+/* footer section */
+.footer {
+    background: #cce0f5;
+    color: #2c2834;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer a {
+    color: #3422fb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets and below (max-width: 968px) */
+@media (max-width: 968px) {
+    /* Navigation adjustments */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-left, .nav-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    /* Header text size */
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-header p {
+        font-size: 1.1rem;
+    }
+
+    /* Introduction section */
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* History container stacking */
+    .history-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .history-image {
+        position: relative;
+        top: 0;
+    }
+
+    /* VM container stacking */
+    .vm-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section titles */
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    /* CTA adjustments */
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Navigation compact */
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-left a, .nav-right a {
+        font-size: 0.85rem;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .social-icons a i {
+        font-size: 18px;
+        margin-left: 8px;
+    }
+
+    /* Header compact */
+    .page-header {
+        padding: 60px 15px 50px;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .header-subtext {
+        font-size: 0.9rem;
+    }
+
+    /* Introduction compact */
+    .introduction {
+        padding: 50px 15px;
+        background-attachment: scroll;
+    }
+
+    .intro-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .intro-lead {
+        font-size: 1rem;
+    }
+
+    .programs-grid {
+        gap: 20px;
+    }
+
+    .program-card {
+        padding: 20px;
+    }
+
+    .program-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    /* History compact */
+    .history {
+        padding: 50px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+
+    /* VM section compact */
+    .vision-mission {
+        padding: 50px 15px;
+    }
+
+    .vm-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .vm-card {
+        padding: 25px;
+    }
+
+    .vm-icon {
+        font-size: 2.5rem;
+    }
+
+    .vm-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .vm-quote {
+        font-size: 1.1rem;
+    }
+
+    /* CTA section compact */
+    .registration-cta {
+        padding: 50px 15px;
+    }
+
+    .cta-icon {
+        font-size: 3rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    /* Footer compact */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left img {
+        padding-left: 0 !important;
+    }
+}
